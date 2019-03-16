@@ -1,7 +1,7 @@
 function lawOfCosines (angleC, sideA, sideB) {
-  let sideC = precise(Math.sqrt(square(sideA) + square(sideB) - 2 * (sideA) * (sideB) * Math.cos(toRadians(angleC))))
-  let angleA = precise(Math.acos((square(sideB) - square(sideA) + square(sideC)) / (2 * sideA * sideC)) * (180 / Math.PI))
-  let angleB = 180 - angleA - angleC
+  const sideC = precise(Math.sqrt(square(sideA) + square(sideB) - 2 * (sideA) * (sideB) * Math.cos(toRadians(angleC))))
+  const angleA = precise(Math.acos((square(sideB) - square(sideA) + square(sideC)) / (2 * sideA * sideC)) * (180 / Math.PI))
+  const angleB = 180 - angleA - angleC
   let triangleState = {
     sideA, sideB, sideC, angleA, angleB, angleC
   }
@@ -11,8 +11,8 @@ function lawOfCosines (angleC, sideA, sideB) {
 }
 
 function calculateCentroid (pointA, pointB, pointC) {
-  let xCoordinate = ((pointA.x + pointB.x + pointC.x) / 3)
-  let yCoordinate = ((pointA.y + pointB.y + pointC.y) / 3)
+  const xCoordinate = ((pointA.x + pointB.x + pointC.x) / 3)
+  const yCoordinate = ((pointA.y + pointB.y + pointC.y) / 3)
   return {}
 }
 
@@ -36,7 +36,7 @@ function square (number) {
   return Math.pow(number, 2)
 }
 
-export let triangle = {
+export const triangle = {
   lawOfCosines
 }
 

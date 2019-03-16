@@ -1,0 +1,8 @@
+{
+  "name": "triangle-math",
+  "version": "1.0.0",
+  "main": "triangle-math.js",
+  "repository": "https://github.com/kitruh/triangle-math.git",
+  "author": "Max Hunter",
+  "license": "MIT"
+}
